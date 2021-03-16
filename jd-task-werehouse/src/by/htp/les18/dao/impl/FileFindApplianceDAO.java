@@ -35,7 +35,7 @@ public class FileFindApplianceDAO implements FindApplianceDAO {
 			try {
 				applianceSourceReaderImpl.close();
 			} catch (IOException e) {
-				e.printStackTrace();
+				e.printStackTrace();// чтобы ты ни писал, не оставляй catch-и пустыми; printStackTrace не является решением проблемы, т.к. и чстый логгинг в одиночку.
 			}
 		}
 

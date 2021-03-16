@@ -42,7 +42,7 @@ public class FileUserDAO implements UserDAO {
 					return false;
 				}
 			}
-			br.close();
+			br.close();// ошибка кодирования. Аккуратно, close вызывается только в блоке finally и нигде еще
 		} catch (FileNotFoundException e) {
 			throw new DAOException(e);
 		} catch (IOException e) {
